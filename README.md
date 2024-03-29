@@ -1,11 +1,12 @@
 # Projet SAE6
 
-Ce projet utilise **Laravel**, **Tailwind CSS**, **MySQL**, et **PhpMyAdmin** pour le développement web.
+Ce projet utilise **Laravel**, **Tailwind CSS**, **MySQL**, et **PhpMyAdmin**, **Tailwind CSS**, **DaisyUI** pour le développement web.
 
 
 ## Technologies
 
-- **Backend/Frontend :** Laravel 8 (avec PHP 7.4.33)
+- **Backend :** Laravel 8 (avec PHP 7.4.33)
+- **Frontend :** Tailwind CSS, DaisyUI
 - **Base de données :** MySQL
 - **PhpMyAdmin :** 5.0.4
 
@@ -29,6 +30,8 @@ sudo docker-compose up -d --build
 
 
 ## Pour les développeurs
+
+Pour utiliser `artisan` ou `yarn watch` vous devez switch sur le user `appuser` dans le docker !!!!!!!!!!!!!!
 
 ### Environnement de développement
 
