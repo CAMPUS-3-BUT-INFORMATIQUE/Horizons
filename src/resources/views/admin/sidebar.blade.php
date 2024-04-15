@@ -1,37 +1,21 @@
-
-@extends('base')
-
-
-@section('title', 'Admin')
-
-
-@section('container')
-    <div class="h-screen w-64 text-black flex flex-col bg-amber-400">
-        <div>
-            <img src="{{ asset('storage/logo_unicaen_bl.png') }}" alt="Description de l'image">
-        </div>
-        <div tabindex="0" class="collapse collapse-arrow">
-            <div class="collapse-title text-sm font-medium hover:bg-gray-200/20">
-                FAQ
-            </div>
-            <div class="collapse-content">
-                <ul>
-                    <li><a href="admin/liste-question">Liste question</a></li>
-                    <li><a href="/admin/ajouter-question">Ajouter une question</a></li>
-                </ul>
-            </div>
-        </div>
-        <div tabindex="0" class="collapse collapse-arrow">
-            <div class="collapse-title text-sm font-medium hover:bg-gray-200/20">
-                Utilisateurs
-            </div>
-            <div class="collapse-content">
-                <ul>
-                    <li><a href="/admin/etudiants">Étudiants</a></li>
-                    <li><a href="/admin/enseignants">Enseignants</a></li>
-                    <li><a href="/admin/enseignants">Administrateurs</a></li>
-                </ul>
-            </div>
-        </div>
+<div class="h-screen w-64 text-black flex flex-col bg-amber-400 p-3">
+    <div>
+        <img src="{{ asset('storage/logo_unicaen_bl.png') }}" alt="Logo Unicaen">
     </div>
-@endsection
+    @foreach ($menus as $menu => $submenus)
+        <div tabindex="0" class="collapse collapse-arrow hover:bg-gray-200/20 my-3">
+            <div class="collapse-title flex items-center font-bold text-xl">
+                {{ $menu }}
+            </div>
+            @if ($submenus)
+                <div class="collapse-content pl-6">
+                    <ul class="space-y-2">
+                        @foreach ($submenus as $submenu)
+                            <li><a href="{{ $submenu['url'] }}">{{ $submenu['name'] }}</a></li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+        </div>
+    @endforeach
+</div>

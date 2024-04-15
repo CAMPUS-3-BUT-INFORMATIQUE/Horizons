@@ -21,6 +21,6 @@ Route::get('/sftptest', function () {
     return view('testSftp');
 });
 
-Route::get('/admin/sidebar', function () {
-    return view('/admin/sidebar');
+Route::get('/admin', function () {
+    return view('admin.base');
 });
