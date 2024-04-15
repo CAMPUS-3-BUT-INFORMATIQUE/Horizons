@@ -130,7 +130,7 @@ return [
     | page in which the call was initiated.  You can override this method
     | and force the user to be redirected to a specific URL here.
     */
-    'cas_redirect_path' => env('CAS_REDIRECT_PATH', ''),
+    'cas_redirect_path' => env('CAS_REDIRECT_PATH', 'https://dev-toitot211.users.info.unicaen.fr/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -159,7 +159,7 @@ return [
     | 3) false
     |--------------------------------------------------------------------------
     */
-    'cas_debug' => env('CAS_DEBUG', false),
+    'cas_debug' => env('CAS_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -167,7 +167,7 @@ return [
     | true | false
     |--------------------------------------------------------------------------
     */
-    'cas_verbose_errors' => env('CAS_VERBOSE_ERRORS', false),
+    'cas_verbose_errors' => env('CAS_VERBOSE_ERRORS', true),
 
     /*
     |--------------------------------------------------------------------------
