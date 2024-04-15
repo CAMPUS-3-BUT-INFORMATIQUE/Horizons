@@ -65,7 +65,7 @@ return [
     |--------------------------------------------------------------------------
     | Example: 'http://localhost', 'https://example.com:8888'
     */
-    'cas_client_service' => env('CAS_CLIENT_SERVICE', 'https://ecampus.unicaen.fr'),
+    'cas_client_service' => env('CAS_CLIENT_SERVICE', 'https://dev-agile8.users.info.unicaen.fr/'),
 
 
     /*
