@@ -4,6 +4,7 @@
     </div>
     @foreach ($menus as $menu => $submenus)
         <div tabindex="{{ $loop->index }}" class="collapse collapse-arrow hover:bg-gray-200/20 my-3">
+            <input type="radio" name="accordion" />
             <div class="collapse-title flex items-center font-bold text-xl">
                 {{ $menu }}
             </div>
