@@ -5,13 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-
 class FAQCategory extends Model
 {
     use HasFactory;
 
-    public function categories(): BelongsToMany
+    public $table = 'faq_categories';
+
+    public $fillable = ['name'];
+
+    public function questions(): BelongsToMany
     {
-        return $this->belongsToMany(FAQCategory::class);
+        return $this->belongsToMany(FAQQuestion::class);
     }
 }
