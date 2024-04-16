@@ -16,7 +16,7 @@
     <div id="container">
         @yield('container')
     </div>
-    <x-Footer/>
+    <x-footer/>
 
     <script src="{{ mix('/js/app.js') }}"></script>
 </body>
