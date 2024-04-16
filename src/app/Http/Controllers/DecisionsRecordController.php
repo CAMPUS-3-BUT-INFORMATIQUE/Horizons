@@ -7,13 +7,11 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 
-class DecisionsRecordController extends BaseController
-{
+class DecisionsRecordController extends BaseController {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function index()
-    {
-        return view('decisionsRecords', ['color' => 'blue', "sectionName" => "Relevés des décisions"]);
+    public function index() {
+        return view('decisionsRecords', ['color' => 'Sblue', "sectionName" => "Relevés des décisions"]);
 
     }
 }
