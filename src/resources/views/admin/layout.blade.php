@@ -40,8 +40,16 @@
                 </div>
             @endforeach
         </div>
-        <div id="content" class="w-5/6">
-            @yield('content')
+        <div class="flex flex-col w-5/6">
+            <div class="flex justify-between p-4 mb-2 bg-gray-500/30">
+                <div></div>
+                <button class="bg-gray-400 hover:bg-gray-300 text-white font-bold py-2 px-4 rounded">
+                    Se déconnecter
+                </button>
+            </div>
+            <div id="content">
+                @yield('content')
+            </div>
         </div>
     </div>
 @endsection
