@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
 
 
@@ -11,12 +12,11 @@
 
 </head>
 
-<body>
-    <x-header/>
+<body class="font-['Ubuntu']">
+
     <div id="container">
         @yield('container')
     </div>
-    <x-footer/>
 
     <script src="{{ mix('/js/app.js') }}"></script>
 </body>

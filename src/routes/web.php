@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', ['color' => "blue", "sectionName" => "Welcome"]);
 });
 
 Route::get('/sftptest', function () {
     return view('testSftp');
 });
+
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+Route::get('/admin/questions', [AdminController::class, 'questions'])->name('admin.questions');
+Route::get('/admin/add', function () {
+    return view('admin.questions.form');
+})->name('admin.questions.add');
