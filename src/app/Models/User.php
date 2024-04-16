@@ -43,7 +43,8 @@ class User extends Authenticatable
     ];
 
 
-    public function ItsaTest(){
+    public function ItsaTest()
+    {
                             return 'ItsaTest';  
                             
     }
