@@ -1,4 +1,4 @@
-<div class="flex justify-around items-center">
+<div class="flex justify-evenly items-center">
     <div style="width: 100px; height: 100px; margin-top: 15px;">
         <img src="{{ asset('images/logo_unicaen_noir.png') }}" alt="Logo unicaen" />
     </div>
