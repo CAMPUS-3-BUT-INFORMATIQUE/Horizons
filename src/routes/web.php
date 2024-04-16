@@ -22,7 +22,7 @@ Route::get('/sftptest', function () {
     return view('testSftp');
 });
 
-Route::get('/releves-des-decisions', [ 'color' => 'horizon-blue', App\Http\Controllers\DecisionsRecordController::class, 'index' ]);
+Route::get('/releves-des-decisions', [ App\Http\Controllers\DecisionsRecordController::class, 'index' ]);
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::get('/admin/questions', [AdminController::class, 'questions'])->name('admin.questions');

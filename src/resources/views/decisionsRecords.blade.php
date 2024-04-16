@@ -1,8 +1,8 @@
-@extends('base')
+@extends('layout')
 
-@section('title', __('Relevés des décisions'))
+@section('title', 'Relevés des décisions')
 
-@section('container')
+@section('content')
     <div role="tablist" class="tabs tabs-bordered">
         <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="2023" checked/>
         <div role="tabpanel" class="tab-content p-10">
