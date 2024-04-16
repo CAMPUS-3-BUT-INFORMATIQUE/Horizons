@@ -9,16 +9,15 @@ const __dirname = path.dirname(__filename)
 const compat = new FlatCompat({ baseDirectory: __dirname, recommendedConfig: pluginJs.configs.recommended })
 
 export default [
-{
+ {
     files: ['**/*.js'],
-    languageOptions: { sourceType: 'commonjs' }
-},
-{   rules: {
-      semi: "off"
+    languageOptions: { sourceType: 'commonjs' },
+    rules: {
+        semi: ["error", "never"]
     }
-},
-{
+ },
+ {
     ignores: ['/config/*', 'tailwind.config.js', 'webpack.mix.js']
-},
+ },
  ...compat.extends('standard')
-]
+];
