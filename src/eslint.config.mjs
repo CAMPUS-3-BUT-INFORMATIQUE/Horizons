@@ -2,7 +2,6 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
 import pluginJs from '@eslint/js';
-import eslintConfigPrettier from 'eslint-config-prettier'; // Import eslint-config-prettier
 
 // mimic CommonJS variables -- not needed if using CommonJS
 const __filename = fileURLToPath(import.meta.url);
@@ -17,6 +16,5 @@ export default [
  {
     ignores: ['/config/*', 'tailwind.config.js', 'webpack.mix.js']
  },
- ...compat.extends('standard'),
- eslintConfigPrettier // Include eslint-config-prettier to ensure Prettier compatibility
+ ...compat.extends('standard')
 ];
