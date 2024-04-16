@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,4 @@ Route::get('/sftptest', function () {
     return view('testSftp');
 });
 
-Route::get('/admin', function () {
-    return view('admin.base');
-});
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
