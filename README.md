@@ -98,3 +98,13 @@ https://chat.openai.com/
 ```bash
 yarn run eslint . --fix
 ```
+
+## Astuces pour Phpstan :
+
+### Ignorer des lignes pour l'analyse :
+```php
+/** @phpstan-ignore-line */
+//ou
+/** @phpstan-ignore-next-line */
+```
+
