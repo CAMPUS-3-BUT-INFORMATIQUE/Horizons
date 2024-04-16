@@ -42,7 +42,7 @@ L'environnement recommendé pour le développement est **Visual Studio Code** av
 
 **Fortement conseillé** :
 
-- **PHP Intelephense** (https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+- **Phpstan** (https://marketplace.visualstudio.com/items?itemName=SanderRonde.phpstan-vscode)
 - **Laravel Blade Snippets** (https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade)
 - **Tailwind CSS IntelliSense** (https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
