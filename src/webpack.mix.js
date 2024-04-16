@@ -16,3 +16,6 @@ mix.js("resources/js/app.js", "public/js").postCss(
     "public/css",
     [require("tailwindcss")],
 );
+
+mix.copyDirectory("vendor/tinymce/tinymce", "public/js/tinymce");
+mix.copyDirectory("node_modules/choices.js/public/assets", "public/js/choices");

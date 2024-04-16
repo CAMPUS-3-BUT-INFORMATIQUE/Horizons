@@ -6,11 +6,12 @@
     "license": "MIT",
     "require": {
         "php": "^7.4",
+        "ext-pdo": "*",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
-        "ext-pdo": "*"
+        "tinymce/tinymce": "^7.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.7",
