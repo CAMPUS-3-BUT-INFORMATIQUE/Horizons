@@ -11,10 +11,11 @@ const mix = require("laravel-mix");
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        require('tailwindcss'),
-    ]);
+mix.js("resources/js/app.js", "public/js").postCss(
+    "resources/css/app.css",
+    "public/css",
+    [require("tailwindcss")],
+);
 
-mix.copyDirectory('vendor/tinymce/tinymce', 'public/js/tinymce');
-mix.copyDirectory('node_modules/choices.js/public/assets', 'public/js/choices');
+mix.copyDirectory("vendor/tinymce/tinymce", "public/js/tinymce");
+mix.copyDirectory("node_modules/choices.js/public/assets", "public/js/choices");
