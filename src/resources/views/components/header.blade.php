@@ -55,7 +55,7 @@
                     <div id="mobile-menu-text" class="ml-2">MENU</div>
                 </button>
             </div>
-            <div id="mobile-menu" class="ml-auto hidden absolute bg-white min-w-fit w-1/4 right-0 top-16 1xl5:hidden">
+            <div id="mobile-menu" class="ml-auto hidden absolute bg-white min-w-fit w-1/4 right-0 top-16 1xl5:hidden z-50">
                 <ul class="w-full">
                     @foreach ($navs as $nav)
                         <li class="py-3 px-7 min-w-32 ">
