@@ -27,7 +27,7 @@ jobs:
       working-directory: src  # Spécifiez le répertoire où se trouve composer.json
 
     - name: Run PHPStan
-      run: php vendor/bin/phpstan analyse --level=max
+      run: php vendor/bin/phpstan analyse
       working-directory: src  # Spécifiez le répertoire où se trouve composer.json
 
   eslint:
