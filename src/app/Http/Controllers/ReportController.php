@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Report;
 use App\Models\ReportType;
 use Carbon\Carbon;
+use App\Models\ReportParticipant;
 use Illuminate\Http\Request;
 
 class ReportController extends Controller
@@ -74,7 +75,10 @@ class ReportController extends Controller
      */
     public function create(Request $request)
     {
-        return view('reports.create');
+        $participants = ReportParticipant::all();
+        return view('reports.create', [
+            'participants' => $participants,
+        ]);
     }
 
     /**

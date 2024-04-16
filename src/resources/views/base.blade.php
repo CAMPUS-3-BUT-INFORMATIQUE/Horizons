@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
 
-
     <title>@yield('title')</title>
+    <x-head.tinymce-config/>
 
 </head>
 
