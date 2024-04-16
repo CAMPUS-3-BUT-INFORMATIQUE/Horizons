@@ -1,5 +1,4 @@
 import globals from 'globals'
-
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { FlatCompat } from '@eslint/eslintrc'
@@ -11,7 +10,13 @@ const __dirname = path.dirname(__filename)
 const compat = new FlatCompat({ baseDirectory: __dirname, recommendedConfig: pluginJs.configs.recommended })
 
 export default [
-  { files: ['**/*.js'], languageOptions: { sourceType: 'commonjs' } },
-  { languageOptions: { globals: globals.browser } },
-  ...compat.extends('standard')
+ { 
+    files: ['**/*.js'], 
+    ignores: ['/config','tailwind.config.js','webpack.mix.js'],
+    languageOptions: { sourceType: 'commonjs' },
+    rules: {
+      'semi': ['error', 'never']
+    }
+ },
+ ...compat.extends('standard')
 ]
