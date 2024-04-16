@@ -12,8 +12,8 @@ services:
         ports:
             - "${APP_PORT:-80}:80"
         volumes:
-            - "../src:/var/www/private/git-dev/src"
-            - "../src/public:/var/www/www-dev"
+            - "../builds:/var/www/private/git-dev/src"
+            - "../builds/public:/var/www/www-dev"
             - "../docker/apache_default.conf:/etc/apache2/sites-enabled/000-default.conf"
 
     agile8.mariadb:
