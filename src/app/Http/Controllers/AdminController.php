@@ -10,4 +10,10 @@ class AdminController extends Controller
     {
         return view('admin.layout');
     }
+
+    public function questions(): View
+    {
+        return view('admin.questions.base');
+    }
+
 }

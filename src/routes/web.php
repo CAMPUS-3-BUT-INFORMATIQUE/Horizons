@@ -23,7 +23,7 @@ Route::get('/sftptest', function () {
 });
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
-
+Route::get('/admin/questions', [AdminController::class, 'questions'])->name('admin.questions');
 Route::get('/admin/add', function () {
     return view('admin.questions.form');
 });
