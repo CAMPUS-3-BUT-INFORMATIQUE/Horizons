@@ -1,6 +1,6 @@
-<div class="flex justify-around">
-    <div>
-        Logo unicaen
+<div class="flex justify-around items-center">
+    <div style="width: 100px; height: 100px; margin-top: 15px;">
+        <img src="{{ asset('images/logo_unicaen_noir.png') }}" alt="Logo unicaen" />
     </div>
     <div class="text-center">
         <div class="flex justify-evenly">
@@ -40,7 +40,10 @@
                 </a>
             </div>
         </div>
-        <div>2024, all rights reserved</div>
+        <br>
+        <div>© 2024, all rights reserved</div>
     </div>
-    <div>Logo horizons</div>
+    <div style="width: 100px; height: 100px">
+        <img src="{{ asset('images/couleur.png') }}" alt="Logo Horizons" />
+    </div>
 </div>
