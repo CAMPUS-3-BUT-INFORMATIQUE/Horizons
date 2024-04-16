@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Report;
+use App\Models\ReportType;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class ReportController extends Controller
@@ -15,10 +17,38 @@ class ReportController extends Controller
      */
     public function reports(Request $request)
     {
+        $report_types = ReportType::all();
         $reports = Report::all();
 
         return view('reports.index', [
-            'reports' => $reports->latest(),
+            'report_types' => $report_types,
+            'headers' => [
+                __('Type'),
+                __('Intitulé'),
+                __('Ordre du jour'),
+                __('Date'),
+                __('Actions')
+            ],
+            'reports' => $reports,
+            // 'reports' => [
+            //     'headers' => [
+            //         __('Date'),
+            //         __('Intitulé'),
+            //         __('Ordre du jour'),
+            //         __('Actions')
+            //     ],
+            //     'rows' => $reports->map(function ($report) {
+            //         return [
+            //             $report->start_date->format('d/m/Y'),
+            //             $report->title(),
+            //             $report->report_agenda,
+            //             [
+            //                 'edit' => route('reports.edit', $report),
+            //                 'delete' => route('reports.delete', $report),
+            //             ],
+            //         ];
+            //     }),
+            // ],
         ]);
     }
 

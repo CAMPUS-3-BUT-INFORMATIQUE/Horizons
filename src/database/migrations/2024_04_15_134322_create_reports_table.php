@@ -21,9 +21,8 @@ class CreateReportsTable extends Migration
             $table->foreignIdFor(ReportType::class, 'report_type_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
             $table->dateTime('start_date');
             $table->dateTime('end_date');
-            $table->string('report_agenda');
-            $table->text('decisions');
-            $table->text('conclusions');
+            $table->string('title');
+            $table->text('report_agenda');
             $table->text('comments');
             $table->timestamps();
         });

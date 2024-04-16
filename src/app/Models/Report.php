@@ -10,25 +10,23 @@ class Report extends Model
     use HasFactory;
 
     /**
-     * Get the title of the report.
-     * Composed of the start date and the end date.
+     * Retrieve the type of the report.
      * 
-     * @return string
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function title()
+    public function report_type()
     {
-        if ($this->start_date->isSameDay($this->end_date)) {
-            return __('Reunion du :date de :start_time a :end_time', [
-                'date' => $this->start_date->format('d/m/Y'),
-                'start_time' => $this->start_date->format('H:i'),
-                'end_time' => $this->end_date->format('H:i'),
-            ]);
-        } else {
-            return __('Reunion du :start_date a :end_date', [
-                'start_date' => $this->start_date->format('d/m/Y H:i'),
-                'end_date' => $this->end_date->format('d/m/Y H:i'),
-            ]);
-        }
+        return $this->belongsTo(ReportType::class);
+    }
+
+    /**
+     * Retrieve decisions of the report.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function decisions()
+    {
+        return $this->hasMany(ReportDecision::class);
     }
 
     /**
