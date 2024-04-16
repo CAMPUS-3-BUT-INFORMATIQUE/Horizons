@@ -11,9 +11,10 @@ const compat = new FlatCompat({ baseDirectory: __dirname, recommendedConfig: plu
 export default [
 {
     files: ['**/*.js'],
-    languageOptions: { sourceType: 'commonjs' },
-    rules: {
-      'semi': 'off'
+    languageOptions: { sourceType: 'commonjs' }
+},
+{   rules: {
+      semi: "off"
     }
 },
 {
