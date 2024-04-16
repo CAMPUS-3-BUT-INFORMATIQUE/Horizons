@@ -13,7 +13,8 @@
 </head>
 
 <body class="font-['Ubuntu']">
-    <x-header/>
+    <x-Header/>
+
     <div id="container">
         @yield('container')
     </div>
