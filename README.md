@@ -86,3 +86,15 @@ https://laravel.com/docs/8.x
 https://www.youtube.com/watch?v=_GeVGCOBF5Q&list=PLjwdMgw5TTLXz1GRhKxSWYyDHwVW-gqrm
 
 https://chat.openai.com/
+
+## Commande pour les linters / analyse statiques :
+
+### phpcs :
+```bash
+./vendor/bin/phpcs **/*.php
+```
+
+### Eslint :
+```bash
+yarn run eslint . --fix
+```
