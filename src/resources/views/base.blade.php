@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+    <x-header/>
     <div id="container">
         @yield('container')
     </div>
