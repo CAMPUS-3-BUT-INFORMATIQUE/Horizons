@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Migrations;
+
 use App\Models\FAQCategory;
 use App\Models\FAQQuestion;
 use Illuminate\Database\Migrations\Migration;
