@@ -30,6 +30,6 @@ class CreateFAQQuestionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('f_a_q_questions');
+        Schema::dropIfExists('faq_questions');
     }
 }
