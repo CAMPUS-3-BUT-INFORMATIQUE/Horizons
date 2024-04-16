@@ -13,15 +13,4 @@ use Symfony\Component\HttpFoundation\Response;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-
-    public function index(): JsonResponse
-    {
-        return response()->json([
-            'success' => true,
-            'data' => User::all(),
-            'info' => [
-                'code' => Response::HTTP_OK
-            ]
-        ]);
-    }
 }
