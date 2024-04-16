@@ -42,7 +42,7 @@ L'environnement recommendé pour le développement est **Visual Studio Code** av
 
 **Fortement conseillé** :
 
-- **PHP Intelephense** (https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
+- **Phpstan** (https://marketplace.visualstudio.com/items?itemName=SanderRonde.phpstan-vscode)
 - **Laravel Blade Snippets** (https://marketplace.visualstudio.com/items?itemName=onecentlin.laravel-blade)
 - **Tailwind CSS IntelliSense** (https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
@@ -86,3 +86,15 @@ https://laravel.com/docs/8.x
 https://www.youtube.com/watch?v=_GeVGCOBF5Q&list=PLjwdMgw5TTLXz1GRhKxSWYyDHwVW-gqrm
 
 https://chat.openai.com/
+
+## Commande pour les linters / analyse statiques :
+
+### phpcs :
+```bash
+./vendor/bin/phpcs **/*.php
+```
+
+### Eslint :
+```bash
+yarn run eslint . --fix
+```
