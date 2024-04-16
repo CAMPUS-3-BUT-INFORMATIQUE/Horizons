@@ -214,5 +214,14 @@
     "/js/tinymce/themes/silver/theme.min.js": "/js/tinymce/themes/silver/theme.min.js",
     "/js/tinymce/tinymce.d.ts": "/js/tinymce/tinymce.d.ts",
     "/js/tinymce/tinymce.js": "/js/tinymce/tinymce.js",
-    "/js/tinymce/tinymce.min.js": "/js/tinymce/tinymce.min.js"
+    "/js/tinymce/tinymce.min.js": "/js/tinymce/tinymce.min.js",
+    "/js/choices/scripts/choices.js": "/js/choices/scripts/choices.js",
+    "/js/choices/scripts/choices.min.js": "/js/choices/scripts/choices.min.js",
+    "/js/choices/scripts/choices.min.js.LICENSE.txt": "/js/choices/scripts/choices.min.js.LICENSE.txt",
+    "/js/choices/styles/base.css": "/js/choices/styles/base.css",
+    "/js/choices/styles/base.css.map": "/js/choices/styles/base.css.map",
+    "/js/choices/styles/base.min.css": "/js/choices/styles/base.min.css",
+    "/js/choices/styles/choices.css": "/js/choices/styles/choices.css",
+    "/js/choices/styles/choices.css.map": "/js/choices/styles/choices.css.map",
+    "/js/choices/styles/choices.min.css": "/js/choices/styles/choices.min.css"
 }
