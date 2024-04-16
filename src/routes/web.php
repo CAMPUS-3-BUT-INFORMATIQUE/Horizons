@@ -27,3 +27,14 @@ Route::get('/admin/questions', [AdminController::class, 'questions'])->name('adm
 Route::get('/admin/add', function () {
     return view('admin.questions.form');
 })->name('admin.questions.add');
+
+Route::prefix('reports')->group(function () {
+    Route::get('/', [App\Http\Controllers\ReportController::class, 'reports'])->name('reports.index');
+    Route::get('/{report}', [App\Http\Controllers\ReportController::class, 'show'])->name('reports.show');
+    Route::get('/create', [App\Http\Controllers\ReportController::class, 'create'])->name('reports.create');
+    Route::get('/{report}/edit', [App\Http\Controllers\ReportController::class, 'edit'])->name('reports.edit');
+    Route::get('/{report}/delete', [App\Http\Controllers\ReportController::class, 'delete'])->name('reports.delete');
+
+    Route::post('/', [App\Http\Controllers\ReportController::class, 'store'])->name('reports.store');
+    Route::put('/{report}', [App\Http\Controllers\ReportController::class, 'update'])->name('reports.update');
+});
