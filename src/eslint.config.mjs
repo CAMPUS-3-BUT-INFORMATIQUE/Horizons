@@ -13,5 +13,8 @@ export default [
     files: ['**/*.js'],
     languageOptions: { sourceType: 'commonjs' },
  },
+ {
+    ignores: ['/config/*', 'tailwind.config.js', 'webpack.mix.js']
+ }
  ...compat.extends('standard')
 ];
