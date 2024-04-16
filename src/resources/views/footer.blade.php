@@ -1,9 +1,10 @@
-<div class="flex justify-evenly items-center">
-    <div class="w-40">
-        <img src="{{ asset('images/logo_unicaen_blanc.png') }}" alt="Logo unicaen" />
+<div class="flex flex-col md:flex-row justify-evenly items-center">
+    <div class="-ml-7 md:w-40 flex flex-row items-center">
+        <img class="block max-w-52" src="{{ asset('images/couleur.png') }}" alt="Logo Horizons" />
+        <img class="max-sm:max-w-44 max-sm:h-fit md:hidden" src="{{ asset('images/logo_unicaen_blanc.png') }}" alt="Logo unicaen" />
     </div>
-    <div class="text-center">
-        <div class="flex justify-evenly">
+    <div class="text-center sm:text-sm" >
+        <div class="flex flex-col md:flex-row md:justify-evenly">
             <div>
                 <a class="link" href="https://ecampus.unicaen.fr/local/staticpage/view.php?page=mentions_legales">
                     Mentions légales
@@ -44,6 +45,6 @@
         <div>© 2024, all rights reserved</div>
     </div>
     <div class="w-40">
-        <img src="{{ asset('images/couleur.png') }}" alt="Logo Horizons" />
+        <img class="hidden md:block" src="{{ asset('images/logo_unicaen_blanc.png') }}" alt="Logo Unicaen" />
     </div>
 </div>
