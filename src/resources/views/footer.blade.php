@@ -1,6 +1,6 @@
 <div class="flex justify-evenly items-center">
-    <div style="width: 100px; height: 100px; margin-top: 15px;">
-        <img src="{{ asset('images/logo_unicaen_noir.png') }}" alt="Logo unicaen" />
+    <div class="w-40">
+        <img src="{{ asset('images/logo_unicaen_blanc.png') }}" alt="Logo unicaen" />
     </div>
     <div class="text-center">
         <div class="flex justify-evenly">
@@ -43,7 +43,7 @@
         <br>
         <div>© 2024, all rights reserved</div>
     </div>
-    <div style="width: 100px; height: 100px">
+    <div class="w-40">
         <img src="{{ asset('images/couleur.png') }}" alt="Logo Horizons" />
     </div>
 </div>

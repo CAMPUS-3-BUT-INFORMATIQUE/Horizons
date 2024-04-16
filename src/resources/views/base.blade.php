@@ -20,8 +20,10 @@
     <script src="{{ mix('/js/app.js') }}"></script>
 </body>
 
-<footer>
-    @include('footer')
+<footer class="bg-neutral-700 text-center lg:text-left absolute bottom-0">
+    <div class="p-4 text-center text-surface text-white">
+        @include('footer')
+    </div>
 </footer>
 
 </html>
