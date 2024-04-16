@@ -53,6 +53,7 @@
                 </div>
                 <button class="bg-gray-400 hover:bg-gray-300 text-white font-bold py-2 px-4 rounded">
                     Se déconnecter
+
                 </button>
             </div>
             <div id="content">
