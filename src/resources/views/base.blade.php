@@ -13,7 +13,8 @@
 </head>
 
 <body class="font-['Ubuntu']">
-    <x-Header/>
+    <x-Header />
+    <x-Banner :sectionName="$sectionName" :color="$color" />
 
     <div id="container">
         @yield('container')
