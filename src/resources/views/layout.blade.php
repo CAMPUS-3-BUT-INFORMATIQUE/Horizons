@@ -9,7 +9,7 @@
     <div id="content">
         @yield('content')
     </div>
-    <footer class="bg-neutral-700 text-center lg:text-left absolute bottom-0 w-screen">
+    <footer class="bg-neutral-700 text-center lg:text-left bottom-0 w-screen">
         <div class="p-4 text-center text-surface text-white">
             @include('footer')
         </div>

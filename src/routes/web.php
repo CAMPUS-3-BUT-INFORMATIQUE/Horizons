@@ -27,3 +27,11 @@ Route::get('/admin/questions', [AdminController::class, 'questions'])->name('adm
 Route::get('/admin/add', function () {
     return view('admin.questions.form');
 })->name('admin.questions.add');
+
+Route::get('/faq', function () {
+    return view('faq.base', ['color' => "blue", "sectionName" => "FAQ"]);
+})->name('faq.base');
+
+Route::get('/faq/questions', function () {
+    return view('faq.questions', ['color' => "blue", "sectionName" => "FAQ - Étudiants"]);
+})->name('faq.questions');
