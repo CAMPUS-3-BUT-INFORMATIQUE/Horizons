@@ -15,6 +15,6 @@ export default [
  },
  {
     ignores: ['/config/*', 'tailwind.config.js', 'webpack.mix.js']
- }
+ },
  ...compat.extends('standard')
 ];
