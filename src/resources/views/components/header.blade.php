@@ -1,12 +1,12 @@
 @php
     $navs = [
-        ["title" => 'FAQ', 'href' => 'index'],
-        ["title" => 'Poursuite Et.', 'href' => 'index'],
-        ["title" => 'Stages', 'href' => 'index'],
-        ["title" => 'Apprentissage', 'href' => 'index'],
-        ["title" => 'Relevé Décisions', 'href' => 'index'],
-        ["title" => 'Chef Départ.', 'href' => 'index'],
-        ["title" => 'Doc. Officiels', 'href' => 'index'],
+        ["title" => 'FAQ', 'href' => '#'],
+        ["title" => 'Poursuite Et.', 'href' => '#'],
+        ["title" => 'Stages', 'href' => '#'],
+        ["title" => 'Apprentissage', 'href' => '#'],
+        ["title" => 'Relevé Décisions', 'href' => '#'],
+        ["title" => 'Chef Départ.', 'href' => '#'],
+        ["title" => 'Doc. Officiels', 'href' => '#'],
     ];
 @endphp
 
@@ -24,6 +24,14 @@
                     class='lg:hover:text-[#007bff] max-lg:text-white block font-semibold text-m grid justify-items-center'>{{$nav['title']}}</a>
                 </li>
             @endforeach
+
+            @auth('admin')
+                <li class='max-lg:border-b max-lg:bg-[#007bff] py-3 px-7 max-lg:rounded border-solid border-2 min-w-32 '>
+                <a href="#"
+                    class='lg:hover:text-[#007bff] max-lg:text-white block font-semibold text-m grid justify-items-center'>Admin</a>
+                </li>
+            @endauth
+
           </ul>
 
           <a href="/">
