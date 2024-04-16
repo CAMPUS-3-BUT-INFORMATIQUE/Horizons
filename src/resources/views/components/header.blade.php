@@ -32,14 +32,13 @@
                     {{-- admin --}}
                     @auth
                         <li class="py-3 px-7 border-solid border-2 min-w-32">
-                            <a href="#"
+                            <a href="{{ route('admin') }}"
                                class="hover:text-[#1c73a9] block font-semibold grid justify-items-center uppercase text-xs"
                             >
-                                Admin
+                                Espace admin
                             </a>
                         </li>
                     @endauth
-
                 </ul>
             </div>
 

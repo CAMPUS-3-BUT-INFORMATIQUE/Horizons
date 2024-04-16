@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,9 @@ Route::get('/', function () {
 Route::get('/sftptest', function () {
     return view('testSftp');
 });
+
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+Route::get('/admin/questions', [AdminController::class, 'questions'])->name('admin.questions');
+Route::get('/admin/add', function () {
+    return view('admin.questions.form');
+})->name('admin.questions.add');

@@ -1,0 +1,36 @@
+<?php
+
+namespace Database\Migrations;
+
+use App\Models\FAQCategory;
+use App\Models\FAQQuestion;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateFaqQuestionCategoryTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('faq_question_category', function (Blueprint $table) {
+            $table->id();
+            $table->foreignIdFor(FAQQuestion::class, 'faq_question_id');
+            $table->foreignIdFor(FAQCategory::class, 'faq_category_id');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('faq_question_category');
+    }
+}
