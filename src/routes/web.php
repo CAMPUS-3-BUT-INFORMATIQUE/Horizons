@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/sftptest', function () {
     return view('testSftp');
 });
+
+Route::get('/releve-des-decisions', [ App\Http\Controllers\DecisionsRecordController::class, 'index' ]);
