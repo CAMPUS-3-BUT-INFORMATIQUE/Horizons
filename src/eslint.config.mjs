@@ -13,7 +13,7 @@ export default [
     files: ['**/*.js'],
     languageOptions: { sourceType: 'commonjs' },
     rules: {
-      'semi': 'off',
+        semi: ["error", "never"]
     }
  },
  {
