@@ -10,8 +10,12 @@ class FAQQuestion extends Model
 {
     use HasFactory;
 
-    public function questions(): BelongsToMany
+    public $table = 'faq_questions';
+
+    public $fillable = ['title', 'answer'];
+
+    public function categories(): BelongsToMany
     {
-        return $this->belongsToMany(FAQQuestion::class);
+        return $this->belongsToMany(FAQCategory::class);
     }
 }
