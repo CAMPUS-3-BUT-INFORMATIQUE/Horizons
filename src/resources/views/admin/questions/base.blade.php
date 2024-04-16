@@ -15,9 +15,9 @@
     <div class="flex justify-between items-center p-4 mb-2">
         <div class="flex items-center gap-6">
             <h1 class="text-2xl font-bold">Liste des questions</h1>
-            <button class="bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            <a href="{{route('admin.questions.add')}}" class="bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
                 Ajouter une question
-            </button>
+            </a>
         </div>
         <label class="input input-bordered flex items-center gap-2">
             <input type="text" class="grow" placeholder="Search" />

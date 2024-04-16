@@ -5,13 +5,13 @@
 @php(
     $menus = array(
                 'FAQ' => [
-                    ['url' => '/admin/liste-question', 'name' => 'Liste question'],
-                    ['url' => '/admin/ajouter-question', 'name' => 'Ajouter une question'],
+                    ['url' => 'admin.questions', 'name' => 'Liste question'],
+                    ['url' => 'admin.questions.add', 'name' => 'Ajouter une question'],
                 ],
                 'Utilisateurs' => [
-                    ['url' => '/admin/etudiants', 'name' => 'Étudiants'],
-                    ['url' => '/admin/enseignants', 'name' => 'Enseignants'],
-                    ['url' => '/admin/enseignants', 'name' => 'Administrateurs'],
+                    ['url' => 'admin', 'name' => 'Étudiants'],
+                    ['url' => 'admin', 'name' => 'Enseignants'],
+                    ['url' => 'admin', 'name' => 'Administrateurs'],
                 ],
             )
 )
@@ -20,7 +20,7 @@
     <div class="flex">
         <div class="h-screen w-1/6 text-black flex flex-col bg-amber-400 p-3">
             <div>
-                <img src="{{ asset('storage/logo_unicaen_bl.png') }}" alt="Logo Unicaen">
+                <img src="{{ asset('/images/logo_unicaen_noir.png') }}" alt="Logo Unicaen">
             </div>
             @foreach ($menus as $menu => $submenus)
                 <div tabindex="{{ $loop->index }}" class="collapse collapse-arrow hover:bg-gray-200/20 my-3">
@@ -32,7 +32,7 @@
                         <div class="collapse-content pl-6">
                             <ul class="space-y-2">
                                 @foreach ($submenus as $submenu)
-                                    <li><a href="{{ $submenu['url'] }}">{{ $submenu['name'] }}</a></li>
+                                    <li><a href="{{ route($submenu['url']) }}">{{ $submenu['name'] }}</a></li>
                                 @endforeach
                             </ul>
                         </div>
