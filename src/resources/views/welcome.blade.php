@@ -3,6 +3,7 @@
 
 @section('title', 'Welcome')
 
+@section('color', 'horizon-blue')
 
 @section('content')
     <h1>Welcome</h1>

@@ -15,7 +15,7 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', ['color' => "blue", "sectionName" => "Welcome"]);
 });
 
 Route::get('/sftptest', function () {
