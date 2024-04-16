@@ -15,6 +15,5 @@ class DecisionsRecordController extends BaseController
     public function index(): View
     {
         return view('decisionsRecords', ['color' => 'blue', "sectionName" => "Relevés des décisions"]);
-
     }
 }
